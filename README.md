@@ -67,13 +67,13 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 # Table: trains
-- id 
-- Azienda 
-- Stazione di partenza
-- Stazione di arrivo
-- Orario di partenza
-- Orario di arrivo
-- Codice Treno
-- Numero Carrozze
-- In orario
-- Cancellato
+- id                   BIGINT AI PK UQ
+- Agency               VARCHAR(50)  null
+- Departure_station    VARCHAR(100) NotNull
+- Arrival_station      VARCHAR(100) NotNull
+- Departure_time       DATETIME     NotNull
+- Arrival_time         DATETIME     NotNull
+- Train_code           VARCHAR(100) NotNull
+- Number_carriages     TINYINT      null
+- in_time              Boolean      null
+- Deleted              Boolean      Notnull

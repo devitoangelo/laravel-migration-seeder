@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>Welcome</h1>
+<h1>Trains Italia</h1>
 
 
 
