@@ -21,10 +21,10 @@ class TrainsTableSeeder extends Seeder
             $train->agency = $faker->countryCode();
             $train->Departure_station = $faker->countryCode();
             $train->Arrival_station = $faker->countryCode();
-            $train->Departure_time = $faker->date() && $faker->time();
-            $train->Arrival_time = $faker->date() && $faker->time();
-            $train->Train_code = $faker->numberBetween(0, 999);
-            $train->Number_carriages = $faker->numberBetween(0, 999);
+            $train->Departure_time = $faker->dateTime();
+            $train->Arrival_time = $faker->dateTime();
+            $train->Train_code = $faker->numberBetween(0, 100);
+            $train->Number_carriages = $faker->numberBetween(0, 100);
             $train->in_time = $faker->boolean();
             $train->Deleted = $faker->boolean();
             $train->save();
